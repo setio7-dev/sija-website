@@ -20,11 +20,13 @@ func InitRouter() *gin.Engine {
 	projectController := controllers.NewProjectController()
 	itcController := controllers.NewItcController()
 	moduleController := controllers.NewModuleController()
+	companyController := controllers.NewCompanyController()
 
 	{
 		projects := api.Group("/project")
 		itcs := api.Group("/itc")
 		modules := api.Group("/module")
+		companies := api.Group("/company")
 
 		{
 			projects.GET("", projectController.GetAll)
@@ -44,6 +46,12 @@ func InitRouter() *gin.Engine {
 			modules.POST("", moduleController.Create)
 			modules.PUT("/:id", moduleController.Update)
 			modules.DELETE("/:id", moduleController.Delete)
+
+			companies.GET("", companyController.GetAll)
+			companies.GET("/:id", companyController.GetById)
+			companies.POST("", companyController.Create)
+			companies.PUT("/:id", companyController.Update)
+			companies.DELETE("/:id", companyController.Delete)
 		}
 	}
 
