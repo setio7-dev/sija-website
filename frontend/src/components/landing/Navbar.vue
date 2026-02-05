@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { useRouter } from "vue-router"
 
 const scrolled = ref(false)
 const mobileMenuOpen = ref(false)
@@ -12,6 +13,7 @@ onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 })
 
+const navigate = useRouter();
 </script>
 
 <template>
@@ -44,12 +46,6 @@ onMounted(() => {
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-primary to-secondary group-hover:w-full transition-all duration-300"></span>
                     </a>
-                    <a href="#tentang"
-                        class="relative cursor-pointer text-slate-300 hover:text-white transition-all duration-300 font-poppins-medium group">
-                        <span>Tentang</span>
-                        <span
-                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-primary to-secondary group-hover:w-full transition-all duration-300"></span>
-                    </a>
                     <a href="#itclub"
                         class="relative cursor-pointer text-slate-300 hover:text-white transition-all duration-300 font-poppins-medium group">
                         <span>IT Club</span>
@@ -77,7 +73,7 @@ onMounted(() => {
                 </div>
 
                 <div class="hidden lg:block">
-                    <button class="relative group">
+                    <button @click="() => navigate.push('/masuk')" class="relative group cursor-pointer">
                         <div
                             class="absolute inset-0 bg-linear-to-r from-primary to-secondary rounded-xl blur opacity-75 group-hover:opacity-100 transition-all duration-300">
                         </div>
@@ -100,8 +96,6 @@ onMounted(() => {
                 class="lg:hidden mt-6 pb-6 border-t border-slate-800 pt-6 space-y-4 animate-fadeIn">
                 <a href="#welcome"
                     class="block cursor-pointer w-full text-left text-slate-300 hover:text-white transition-colors font-poppins-medium py-2">Beranda</a>
-                <a href="#tentang"
-                    class="block cursor-pointer w-full text-left text-slate-300 hover:text-white transition-colors font-poppins-medium py-2">Tentang</a>
                 <a href="#itclub"
                     class="block cursor-pointer w-full text-left text-slate-300 hover:text-white transition-colors font-poppins-medium py-2">IT
                     Club</a>

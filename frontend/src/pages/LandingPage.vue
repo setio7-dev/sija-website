@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Navbar from '../components/landing/Navbar.vue'
 import Home from '../components/landing/Home.vue'
-import About from '../components/landing/About.vue'
 import ITC from '../components/landing/ITC.vue'
 import Modul from '../components/landing/Modul.vue'
 import Achievement from '../components/landing/Achievement.vue'
@@ -10,7 +9,7 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-950 text-white overflow-x-hidden">
+  <div class="min-h-screen overflow-x-hidden">
     
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
       <div class="absolute top-20 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
@@ -20,7 +19,6 @@ import Footer from '../components/Footer.vue'
 
     <Navbar/>
     <Home/>
-    <About/>
     <ITC/>
     <Modul/>
     <Achievement/>

@@ -39,7 +39,7 @@ import sija from "../../../public/images/sija-building.jpeg"
                     </div>
 
                     <div class="flex gap-4 pt-4">
-                        <a href="#tentang" class="group relative">
+                        <a href="#itclub" class="group relative">
                             <div
                                 class="absolute inset-0 bg-linear-to-r from-primary to-secondary rounded-xl blur opacity-75 group-hover:opacity-100 transition-all duration-300">
                             </div>

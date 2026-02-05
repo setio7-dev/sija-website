@@ -1,54 +1,3 @@
-export const Modules = [
-    {
-        title: 'Jaringan Komputer Dasar',
-        icon: '🌐',
-        level: 'Beginner',
-        duration: '24 Jam',
-        students: 156,
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop'
-    },
-    {
-        title: 'Web Development Modern',
-        icon: '💻',
-        level: 'Intermediate',
-        duration: '32 Jam',
-        students: 142,
-        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop'
-    },
-    {
-        title: 'Database Management',
-        icon: '🗄️',
-        level: 'Intermediate',
-        duration: '28 Jam',
-        students: 128,
-        image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=300&fit=crop'
-    },
-    {
-        title: 'Mobile App Development',
-        icon: '📱',
-        level: 'Advanced',
-        duration: '36 Jam',
-        students: 98,
-        image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop'
-    },
-    {
-        title: 'Cyber Security Fundamental',
-        icon: '🔒',
-        level: 'Advanced',
-        duration: '30 Jam',
-        students: 87,
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop'
-    },
-    {
-        title: 'Cloud Computing & DevOps',
-        icon: '☁️',
-        level: 'Expert',
-        duration: '40 Jam',
-        students: 74,
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop'
-    }
-]
-
 export const ItClubDivisions = [
     {
         name: 'Android Development',
@@ -75,7 +24,7 @@ export const ItClubDivisions = [
         projects: 8
     },
     {
-        name: 'UI/UX Design',
+        name: 'UI/UX & Graphic Design',
         icon: '🎨',
         gradient: 'from-pink-500 via-rose-500 to-red-500',
         description: 'Design beautiful interfaces with Figma & Adobe XD',
@@ -107,7 +56,10 @@ export const Achievements = [
         category: 'Web Development',
         medal: '🥇',
         organizer: 'Kementerian Pendidikan',
-        participants: 150
+        participants: 150,
+        studentName: 'Ahmad Rizki Pratama',
+        studentClass: 'XII SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80'
     },
     {
         title: 'Best Innovation Award - Jakarta IT Festival',
@@ -115,7 +67,10 @@ export const Achievements = [
         category: 'Mobile App',
         medal: '🏆',
         organizer: 'Jakarta Smart City',
-        participants: 200
+        participants: 200,
+        studentName: 'Siti Nurhaliza',
+        studentClass: 'XII SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80'
     },
     {
         title: 'Juara 2 Indonesia Cyber Security Challenge',
@@ -123,7 +78,10 @@ export const Achievements = [
         category: 'Cyber Security',
         medal: '🥈',
         organizer: 'BSSN Indonesia',
-        participants: 180
+        participants: 180,
+        studentName: 'Budi Santoso',
+        studentClass: 'XI SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80'
     },
     {
         title: 'Gold Medal LKS Network Administration',
@@ -131,7 +89,10 @@ export const Achievements = [
         category: 'Networking',
         medal: '🥇',
         organizer: 'LKS Provinsi DKI',
-        participants: 120
+        participants: 120,
+        studentName: 'Dewi Lestari',
+        studentClass: 'XII SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80'
     },
     {
         title: 'Runner Up Hackathon Indonesia',
@@ -139,7 +100,10 @@ export const Achievements = [
         category: 'Full Stack',
         medal: '🥈',
         organizer: 'Tech in Asia',
-        participants: 250
+        participants: 250,
+        studentName: 'Fikri Ramadhan',
+        studentClass: 'XII SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80'
     },
     {
         title: 'Best UI/UX Design - Design Sprint',
@@ -147,7 +111,109 @@ export const Achievements = [
         category: 'Design',
         medal: '🏆',
         organizer: 'Indonesia Design Festival',
-        participants: 100
+        participants: 100,
+        studentName: 'Ayu Kartika',
+        studentClass: 'XI SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80'
+    },
+    {
+        title: 'Juara 1 Programming Contest - Code Warriors',
+        year: '2024',
+        category: 'Programming',
+        medal: '🥇',
+        organizer: 'Universitas Indonesia',
+        participants: 220,
+        studentName: 'Reza Fahlevi',
+        studentClass: 'XII SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80'
+    },
+    {
+        title: 'Best Mobile Game Developer - Game Jam 2024',
+        year: '2024',
+        category: 'Game Development',
+        medal: '🏆',
+        organizer: 'Indonesia Game Association',
+        participants: 175,
+        studentName: 'Dimas Setiawan',
+        studentClass: 'XI SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80'
+    },
+    {
+        title: 'Juara 3 Cloud Computing Competition',
+        year: '2024',
+        category: 'Cloud Computing',
+        medal: '🥉',
+        organizer: 'AWS Indonesia',
+        participants: 190,
+        studentName: 'Indah Permata',
+        studentClass: 'XII SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80'
+    },
+    {
+        title: 'Best Database Design - Data Science Challenge',
+        year: '2023',
+        category: 'Database',
+        medal: '🏆',
+        organizer: 'Oracle Academy',
+        participants: 140,
+        studentName: 'Farhan Maulana',
+        studentClass: 'XI SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80'
+    },
+    {
+        title: 'Juara 2 IoT Innovation Competition',
+        year: '2024',
+        category: 'Internet of Things',
+        medal: '🥈',
+        organizer: 'Telkom Indonesia',
+        participants: 165,
+        studentName: 'Maya Anggraini',
+        studentClass: 'XII SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80'
+    },
+    {
+        title: 'Best AR/VR Project - Innovation Expo',
+        year: '2023',
+        category: 'AR/VR',
+        medal: '🏆',
+        organizer: 'Indonesian Tech Community',
+        participants: 130,
+        studentName: 'Arif Wicaksono',
+        studentClass: 'XI SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1617802690658-1173a812650d?w=800&q=80'
+    },
+    {
+        title: 'Juara 1 Ethical Hacking Competition',
+        year: '2024',
+        category: 'Ethical Hacking',
+        medal: '🥇',
+        organizer: 'CISSReC Indonesia',
+        participants: 210,
+        studentName: 'Nurul Fadilah',
+        studentClass: 'XII SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80'
+    },
+    {
+        title: 'Best Animation Project - Digital Art Festival',
+        year: '2023',
+        category: 'Animation',
+        medal: '🏆',
+        organizer: 'Jakarta Animation Festival',
+        participants: 95,
+        studentName: 'Bayu Pamungkas',
+        studentClass: 'XI SIJA 2',
+        achievementPhoto: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&q=80'
+    },
+    {
+        title: 'Juara 3 Blockchain Development Challenge',
+        year: '2024',
+        category: 'Blockchain',
+        medal: '🥉',
+        organizer: 'Blockchain Indonesia',
+        participants: 185,
+        studentName: 'Rahma Wijayanti',
+        studentClass: 'XII SIJA 1',
+        achievementPhoto: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80'
     }
 ]
 
