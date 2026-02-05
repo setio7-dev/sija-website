@@ -38,6 +38,7 @@ func (s *companyService) Create(req dtos.CreateCompanyDTO, imagePath string) (*m
 		Phone: req.Phone,
 		Email: req.Email,
 		Image: imagePath,
+		Link:  req.Link,
 	}
 
 	if err := s.repo.Create(&company); err != nil {
@@ -64,6 +65,9 @@ func (s *companyService) Update(req dtos.UpdateCompanyDTO, imagePath string, id 
 	}
 	if req.Email != nil {
 		company.Email = *req.Email
+	}
+	if req.Link != nil {
+		company.Link = *req.Link
 	}
 	if imagePath != "" {
 		company.Image = imagePath

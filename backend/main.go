@@ -13,6 +13,8 @@ func main() {
 		&models.Project{},
 		&models.Itc{},
 		&models.Module{},
+		&models.Company{},
+		&models.User{},
 	); err != nil {
 		log.Fatal("migration failed", err)
 	}

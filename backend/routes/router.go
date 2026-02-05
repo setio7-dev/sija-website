@@ -10,7 +10,7 @@ func InitRouter() *gin.Engine {
 	r := gin.Default()
 	r.GET("", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "Welcome to Sijaku Hebat API",
+			"message": "Welcome to Sija Website API",
 		})
 	})
 
@@ -21,12 +21,14 @@ func InitRouter() *gin.Engine {
 	itcController := controllers.NewItcController()
 	moduleController := controllers.NewModuleController()
 	companyController := controllers.NewCompanyController()
+	userController := controllers.NewUserController()
 
 	{
 		projects := api.Group("/project")
 		itcs := api.Group("/itc")
 		modules := api.Group("/module")
 		companies := api.Group("/company")
+		users := api.Group("/user")
 
 		{
 			projects.GET("", projectController.GetAll)
@@ -52,6 +54,13 @@ func InitRouter() *gin.Engine {
 			companies.POST("", companyController.Create)
 			companies.PUT("/:id", companyController.Update)
 			companies.DELETE("/:id", companyController.Delete)
+
+			users.GET("", userController.GetAll)
+			users.GET("/:id", userController.GetById)
+			users.POST("/login", userController.Login)
+			users.POST("", userController.Create)
+			users.PUT("/:id", userController.Update)
+			users.DELETE("/:id", userController.Delete)
 		}
 	}
 
